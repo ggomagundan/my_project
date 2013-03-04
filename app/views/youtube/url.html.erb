@@ -1,7 +1,12 @@
 <% content_for :javascript do %>
   <%= javascript_include_tag :youtubes %>
 <% end %>
-  <input type="text" name="url" id="url"></ br>
-  <input type="button" name="btn" id="btn" value="make url"  onClick="makse()"></br>
- <textarea name="results" id="result" rows="10" cols="100" readonly>
- </textarea>
+
+<%= text_field_tag(:url) %>
+<%= submit_tag("Make Url", :id=>"btn", :name => "btn", :onclick=>'makse()') %></br>
+<%= text_area_tag(:result,"", :size => "30x20") %>
+
+<!--  <input type="text" name="url" id="url"></ br> -->
+<!--<input type="button" name="btn" id="btn" value="make url"  onClick="makse()"></br> -->
+<!-- <textarea name="results" id="result" rows="10" cols="100" readonly> -->
+
