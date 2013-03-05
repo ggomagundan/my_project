@@ -8,12 +8,63 @@ textarea {
 }
 
 /* footer */
-.contact{
-  
-  a:link {color: #333333;text-decoration: none;}
-  a:hover { color:#333333; text-decoration : underline;}
 
-  float: right;
+#footer{
+  background-color:#715456;
+  color:#D5D5D5;
+  width:100%;
+  height:130px;
+  margin-bottom:10px;
+}
+
+.footer-container{
+  margin-bottom:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0;
+  max-width:1245px;
+  min-width:320px;
+  width:98%;
+}
+
+.footleft{
+  float:left;
+  margin-left:10px;
+  width:42%;
+}
+
+.footright{
+  float:right;
+  width:40%;
+  margin-left:10px;
+
+}
+
+.left{
+  float:left;
 }
 
 
+.grid100{
+  width:100%;
+}
+
+.clear{
+  clear:both;
+}
+
+
+.contact{
+  
+  a:link {color: #D5D5D5;text-decoration: none;}
+  a:hover { color:#D5D5D5; text-decoration : underline;}
+
+  float: right;
+  margin-right:20px;
+}
+
+.google_Ads{
+  width: 240px;
+  height: 70px;
+  padding-top:10px;
+}
