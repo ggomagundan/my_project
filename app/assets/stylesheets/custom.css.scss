@@ -1,6 +1,13 @@
 @import "bootstrap";
 @import "bootstrap-responsive";
 
+body {
+
+background-image:url("back.png");
+
+
+}
+
 textarea {
       resize: none;
       width:450px;
@@ -38,6 +45,9 @@ textarea {
   width:40%;
   margin-left:10px;
 
+  li{
+    list-style:none;
+  }
 }
 
 .left{
@@ -61,6 +71,12 @@ textarea {
 
   float: right;
   margin-right:20px;
+  
+  li {
+    float:left;
+    list-style:none;
+    margin:0 15px;
+  }
 }
 
 .google_Ads{
