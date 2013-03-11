@@ -3,6 +3,9 @@ Mine::Application.routes.draw do
 
   match '/youtube' => 'youtube#url'
 
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#idestroy', as: 'signout'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

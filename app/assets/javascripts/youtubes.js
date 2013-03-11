@@ -20,4 +20,17 @@
    }
 
 
-
+   function make_url(){
+     var txt = trim($('#url_f').val());
+     alert(txt.substr(0.31));
+     if(txt.substr(0,31) == 'http://youtube.com/watch?v='){
+       alert('ok');
+       var urls = txt.split('/');
+       var shared = urls[3];
+       var result_url = "<object height='480' width='640'><param name='movie' value='http://www.youtube.com/v/"+shared+"?version=3&hl=ko_kr'><param name='allowfullscreen' value='true'><param name='allowscriptaccess' value='always'><embed src='http://www.youtube.com/v/"+shared +"?version=3&hl=ko_kr' type='application/x-shockwave-flash' allowscriptaccess='always' allowfullscreen='true' height='480' width='640'></object>";
+       alert(result_url);
+       $('#result_f').val(result_url);
+     }else{
+       alert('http://youtube.com/xxxxxx 와 같은 형식의 URL을 입력해주세요 ');
+     }
+   }

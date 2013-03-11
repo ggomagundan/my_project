@@ -5,7 +5,10 @@
 <%= text_field_tag(:url) %>
 <%= submit_tag("Make Url", :id=>"btn", :name => "btn", :onclick=>'makse()') %></br>
 <%= text_area_tag(:result,"", :size => "30x20") %>
-
+<br/>
+<%= text_field_tag(:url_f) %>
+<%= submit_tag("Make Url", :id=>"btn_f", :name => "btn_f", :onclick=>'make_url()') %></br>
+<%= text_area_tag(:result_f,"", :size => "30x20") %>
 <!--  <input type="text" name="url" id="url"></ br> -->
 <!--<input type="button" name="btn" id="btn" value="make url"  onClick="makse()"></br> -->
 <!-- <textarea name="results" id="result" rows="10" cols="100" readonly> -->
