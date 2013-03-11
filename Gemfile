@@ -27,8 +27,6 @@ gem 'jquery-rails'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'nifty-generators'
-gem 'google-api-client', :require => 'google/api_client'
-gem 'omniauth-google-oauth2'
 
 group :production do
   gem 'pg', '0.12.2'
